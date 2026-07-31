@@ -8,13 +8,7 @@
 
 MolSys-AI is the intelligent interaction and orchestration layer of MolSysSuite. Its long-term goal is a reproducible scientific copilot for molecular modeling and computational drug design.
 
-MolSys-AI should help users operate a growing ecosystem that includes:
-
-- MolSysMT for molecular-system handling,
-- MolSysViewer for interactive visualization,
-- TopoMT for pockets and molecular topography,
-- PharmacophoreMT for pharmacophore modeling,
-- future MolSysSuite tools.
+MolSys-AI should help users operate a growing ecosystem that includes MolSysMT, MolSysViewer, TopoMT, PharmacophoreMT and future MolSysSuite tools.
 
 Natural language is one input modality. The durable core is a typed, validated and reproducible protocol for scientific actions.
 
@@ -26,12 +20,31 @@ Natural language is one input modality. The durable core is a typed, validated a
 4. Multi-tool scientific workflows.
 5. Exportable scripts, notebooks and workflow manifests.
 
-## Documents
+## Vision and architecture
 
-- [VISION.md](VISION.md): product vision and guiding principles.
-- [ARCHITECTURE.md](ARCHITECTURE.md): target components and repository boundaries.
-- [MOLSYSVIEWER_COPILOT.md](MOLSYSVIEWER_COPILOT.md): live assistance over the viewer canvas.
-- [ROADMAP.md](ROADMAP.md): phased implementation plan.
+- [VISION.md](VISION.md)
+- [ARCHITECTURE.md](ARCHITECTURE.md)
+- [ROADMAP.md](ROADMAP.md)
+
+## Core contracts
+
+- [PROTOCOL.md](PROTOCOL.md): typed commands, observations, results, errors, artifacts and events.
+- [SESSION_MODEL.md](SESSION_MODEL.md): projects, sessions, persistence, history and recovery.
+- [TOOL_PROTOCOL.md](TOOL_PROTOCOL.md): capability manifests and MolSysSuite adapters.
+- [ARTIFACTS_AND_PROVENANCE.md](ARTIFACTS_AND_PROVENANCE.md): workflow manifests, exports and replay.
+
+## User experiences
+
+- [CLI.md](CLI.md): interactive and automated command-line use.
+- [MOLSYSVIEWER_COPILOT.md](MOLSYSVIEWER_COPILOT.md): product vision for live canvas assistance.
+- [VIEWER_PROTOCOL.md](VIEWER_PROTOCOL.md): state, events and synchronization with MolSysViewer.
+
+## Policy and quality
+
+- [MODEL_AND_INFERENCE_POLICY.md](MODEL_AND_INFERENCE_POLICY.md)
+- [USER_PROFILES_AND_MEMORY.md](USER_PROFILES_AND_MEMORY.md)
+- [SECURITY_AND_PRIVACY.md](SECURITY_AND_PRIVACY.md)
+- [EVALUATION.md](EVALUATION.md)
 
 ## Non-negotiable principles
 
