@@ -1,0 +1,25 @@
+schema_version = "0.1"
+
+[subsystem]
+name = "MolSys-AI"
+repository = "uibcdf/molsys-ai"
+parent_component = "uibcdf/molsyssuite"
+platform = "uibcdf/moli"
+
+[repositories.server]
+repository = "uibcdf/molsys-ai-server"
+role = "server"
+governance = "subsystem"
+capabilities = ["python-package", "remote-inference", "software-knowledge", "documentation-assistant"]
+
+[repositories.client]
+repository = "uibcdf/molsys-ai-client"
+role = "client-sdk"
+governance = "subsystem"
+capabilities = []
+
+[repositories.agent]
+repository = "uibcdf/molsys-ai-agent"
+role = "specialist-agent"
+governance = "subsystem"
+capabilities = []
