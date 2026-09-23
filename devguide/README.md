@@ -2,28 +2,32 @@
 
 ## Current project boundary
 
-MolSys-AI is the MolSysSuite-specialized AI subsystem. The project is organized as:
-
 - `molsys-ai` — umbrella architecture and cross-repository coordination;
-- `molsys-ai-server` — remote inference and software-knowledge services;
+- `molsys-ai-server` — remote inference, MolSysSuite Software Knowledge, and documentation-assistant services;
 - `molsys-ai-client` — lightweight typed remote-service SDK;
-- `molsys-ai-agent` — MolSysSuite specialist agent and local scientific execution.
-
-Older documents in this directory were written before this repository split. Their scientific/tooling ideas remain useful, but ownership references such as “local copilot belongs to molsys-ai” should now be read as “MolSys-AI Agent belongs to molsys-ai-agent”.
+- `molsys-ai-agent` — local-first MolSysSuite specialist agent and scientific execution.
 
 ## Mission
 
-MolSys-AI helps humans and higher-level agents understand and operate MolSysSuite. Natural language is one input modality; durable value lies in grounded software knowledge, typed contracts, verified tool use, reproducible execution, and explicit provenance.
+MolSys-AI helps humans and higher-level agents understand and operate MolSysSuite. Durable value lies in grounded software knowledge, typed contracts, verified tool use, reproducible execution, and explicit provenance.
+
+## First operational capability
+
+The documentation chatbot is the first operational MolSys-AI capability. Preserve the capability during restructuring, not the legacy implementation.
+
+The current RAG/corpus/symbol/recipe/citation stack should evolve as a reusable **MolSysSuite Software Knowledge Service** that can serve the chatbot, MolSys-AI Agent, and future clients.
 
 ## Non-negotiable boundaries
 
 - MolSys-AI ≠ MOLI Agent.
-- Server-side inference/software knowledge ≠ local MolSysSuite execution.
+- Server-side inference/Software Knowledge ≠ MolSysSuite execution.
 - Client SDK ≠ specialist agent.
-- The agent may use the client; the client must remain usable without MolSysSuite.
-- Legacy code is migrated by responsibility, not by directory.
-- Working server behavior must be preserved during extraction.
+- Agent may use Client/Server but must not require that topology for every operation.
+- Client remains usable without MolSysSuite.
+- Agent does not import/own server RAG internals.
+- Legacy code migrates by responsibility, not by directory.
+- Working capabilities are preserved while implementations may evolve.
 
 ## Existing design material
 
-The existing VISION, ARCHITECTURE, protocol, session, tool, provenance, CLI, viewer, policy, and evaluation documents remain design inputs. They should be progressively aligned with the current four-repository ownership model rather than rewritten or discarded wholesale.
+Older design documents remain valuable inputs but may predate the current repository split. Ownership references should be progressively aligned rather than copied blindly.
