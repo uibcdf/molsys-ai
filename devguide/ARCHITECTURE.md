@@ -109,7 +109,11 @@ Multi-step autonomy should only be introduced after single-command execution, st
 
 ### `molsys-ai`
 
-Owns the local scientific copilot, sessions, protocol, tool adapters, CLI and MolSysViewer integration.
+Owns subsystem architecture, cross-repository contracts, governance, migration coordination, and shared MolSys-AI decisions. It does **not** own the specialist-agent implementation.
+
+### `molsys-ai-agent`
+
+Owns the local-first MolSysSuite specialist agent, sessions, planning/execution policy, tool adapters, local scientific execution, and agent-owned CLI/viewer integration.
 
 ### `molsys-ai-server`
 
