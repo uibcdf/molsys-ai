@@ -1,12 +1,12 @@
 ---
 summary: Complete issue-backed reporting validation for the MolSys-AI umbrella.
 issue: uibcdf/molsys-ai#2
-status: active
+status: resolved
 opened: 2026-09-28
-closed:
+closed: 2026-09-28
 verification: inspected
 area: [governance, reporting]
-guard:
+guard: tests/test_reporting_protocol.py::TestReportingProtocol::test_existing_reports_have_valid_metadata_and_generated_indexes
 normative:
 blocked_by: []
 supersedes: []
@@ -49,3 +49,13 @@ The validator rejects missing issues, false closure and unresolvable guard
 selectors; generated indexes are current. The exact published commit passes
 its reporting-governance workflow. Close the issue with a durable guard and
 archived report path.
+
+## Resolution
+
+Commit `805a2cc` completed the local template, generated indexes, offline
+validator, contributor guidance and independent hosted reporting workflow.
+The guard checks report metadata and index freshness; two additional negative
+tests reject false closure and unresolvable test selectors. Local index,
+reporting tests and Ruff checks passed. Hosted Reporting governance run
+`36386280283` passed for the implementation commit. The umbrella still makes
+no Python-package support or release claim.

@@ -34,23 +34,29 @@ class TestReportingProtocol(unittest.TestCase):
 
     def test_missing_issue_and_false_closure_are_rejected(self):
         reports, _ = devguide_reports.validate_all()
-        pending = next(
+        archived = next(
             report
             for report in reports
             if report.fields["issue"] == "uibcdf/molsys-ai#2"
         )
-        fields = dict(pending.fields)
+        fields = dict(archived.fields)
         fields["issue"] = ""
-        fields["status"] = "resolved"
-        fields["closed"] = ""
+        fields["status"] = "open"
         fields["guard"] = ""
         fields["normative"] = ""
         invalid = devguide_reports.Report(
-            pending.path, fields, pending.kind, pending.archived
+            archived.path, fields, archived.kind, archived.archived
         )
         errors = devguide_reports.validate_report(invalid)
         self.assertTrue(any("issue must be" in error for error in errors))
-        self.assertTrue(any("closed reports belong" in error for error in errors))
+        self.assertTrue(any("archived reports require" in error for error in errors))
+        self.assertTrue(any("cannot have a closed date" in error for error in errors))
+
+        fields["status"] = "resolved"
+        fields["closed"] = ""
+        errors = devguide_reports.validate_report(
+            devguide_reports.Report(archived.path, fields, archived.kind, True)
+        )
         self.assertTrue(any("requires an ISO closed date" in error for error in errors))
         self.assertTrue(any("requires guard or normative" in error for error in errors))
 
