@@ -5,12 +5,18 @@ status: open
 opened: YYYY-MM-DD
 closed:
 verification: asserted
-area: []
+area: [governance]
+severity: medium
+guard:
+normative:
 blocked_by: []
 supersedes: []
 ---
 
 # Summary
+
+Remove `severity` for a proposal. Open the owning issue before adding the
+report to a pending queue.
 
 ## What
 

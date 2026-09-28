@@ -31,3 +31,11 @@ The current RAG/corpus/symbol/recipe/citation stack should evolve as a reusable 
 ## Existing design material
 
 Older design documents remain valuable inputs but may predate the current repository split. Ownership references should be progressively aligned rather than copied blindly.
+
+## Issue reports
+
+Use the [local reporting protocol](reporting_protocol.md) for subsystem-level
+bugs and proposals. The [pending bugs](pending_bugs/README.md),
+[pending proposals](pending_proposals/README.md) and
+[archive](archive/README.md) have generated indexes. This local protocol
+implements the [MolSysSuite reporting rule](https://github.com/uibcdf/molsyssuite/blob/main/devguide/reporting_protocol.md).

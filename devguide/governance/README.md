@@ -19,3 +19,5 @@ repository-local rules
 The canonical child-facing guide is `MOLSYS_AI_GUIDE.md`. The machine-readable subsystem registry is `molsys-ai.toml`.
 
 GitHub issues are stable work identities. Durable reports use `pending_bugs/`, `pending_proposals/`, and `archive/`.
+The local paths, template, closure procedure and offline commands are in
+[`../reporting_protocol.md`](../reporting_protocol.md).

@@ -10,3 +10,9 @@ Before cross-repository, architectural, migration, or governance work:
 This umbrella repository owns subsystem architecture, internal registry, cross-repository contracts, and migration coordination. Server, Client, and Agent retain their own implementation ownership.
 
 Escalate modeling-domain contracts to `uibcdf/molsyssuite` and MOLI platform-boundary contracts to `uibcdf/moli`.
+
+Before filing or closing a durable subsystem report, follow
+`devguide/reporting_protocol.md`: open the owning GitHub issue first, use
+`devguide/templates/report.md`, and run the commands in
+`devguide/reporting_protocol.md` before committing. Do not edit synchronized
+guide copies in child repositories.
