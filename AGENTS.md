@@ -16,3 +16,13 @@ Before filing or closing a durable subsystem report, follow
 `devguide/templates/report.md`, and run the commands in
 `devguide/reporting_protocol.md` before committing. Do not edit synchronized
 guide copies in child repositories.
+
+## Modular reusable tools
+
+Before adding a feature, inspect existing tools and identify the owning module or
+component. Implement or extend independently useful operations as documented reusable
+tools in that owner, with their own contracts and tests; have consumers call them.
+Keep task-specific decisions local and report missing sibling capabilities to the
+provider with linked consumer evidence. Follow
+[MOLSYSSUITE_GUIDE.md#modular-reusable-tools](MOLSYSSUITE_GUIDE.md#modular-reusable-tools)
+for applicability, compatibility, performance and tracked exceptions.
