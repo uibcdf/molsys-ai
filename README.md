@@ -3,6 +3,7 @@
 [![MolSysSuite: Specialist Subsystem](https://img.shields.io/badge/MolSysSuite-specialist%20subsystem-8b5cf6?labelColor=24292f)](https://github.com/uibcdf/molsyssuite/blob/main/devguide/repository_badges.md#specialist-subsystem)
 [![MolSysSuite policy](https://github.com/uibcdf/molsys-ai/actions/workflows/molsyssuite-policy.yml/badge.svg?branch=main)](https://github.com/uibcdf/molsys-ai/actions/workflows/molsyssuite-policy.yml)
 [![License](https://img.shields.io/github/license/uibcdf/molsys-ai)](https://github.com/uibcdf/molsys-ai/blob/main/LICENSE)
+[![Codecov](https://codecov.io/gh/uibcdf/molsys-ai/branch/main/graph/badge.svg)](https://app.codecov.io/gh/uibcdf/molsys-ai)
 
 **MolSys-AI is the AI subsystem specialized in understanding and operating MolSysSuite.**
 
@@ -66,5 +67,5 @@ The MolSys-AI umbrella is the MolSysSuite member. Server, Client, and Agent are 
 Governance coverage measures the umbrella's Python scripts using its reporting tests;
 Server, Client and Agent runtime code are outside that percentage. The
 [scope and automatic publication route](devguide/coverage_reporting.md) describe
-its push/manual cadence. The initial report is uploaded, but its live percentage
-remains pending independent Codecov processing under `uibcdf/molsys-ai#3`.
+its push/manual cadence. The badge displays the last processed report, which may
+lag skipped or queued commits; it does not certify current runtime behavior.

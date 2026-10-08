@@ -1,10 +1,10 @@
 ---
 summary: Restore canonical umbrella identity, policy and license badges.
 issue: uibcdf/molsys-ai#4
-status: partial
+status: resolved
 opened: 2026-10-01
-closed:
-verification: reproduced
+closed: 2026-10-08
+verification: measured
 area: [governance, documentation, ci]
 guard:
 normative: MOLSYSSUITE_GUIDE.md
@@ -57,5 +57,9 @@ development environment is preserved. The resource validator needed formatting;
 its AST is identical before/after, with no executable logic change. Tool
 configuration is explicit at this repository root.
 
-The actual `policy-v1.5.9` caller is prepared. Exact native checks remain to be
-recorded before closure. Coverage upload processing is independent.
+The actual `policy-v1.5.9` caller passes all required native steps in
+[37757954806](https://github.com/uibcdf/molsys-ai/actions/runs/37757954806)
+on exact source `f88d6c23e8a6079823eb2f95977cc113f005d061`. The independent
+verifier checks the workflow, push event, current attempt, exact job inventory
+and executed conformance/lint/format steps. Coverage acceptance is recorded
+separately under #3. No package or scientific-support claim is introduced.

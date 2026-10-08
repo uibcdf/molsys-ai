@@ -1,10 +1,10 @@
 ---
 summary: Measure and publish coverage of the MolSys-AI umbrella governance scripts.
 issue: uibcdf/molsys-ai#3
-status: partial
+status: resolved
 opened: 2026-10-01
-closed:
-verification: inspected
+closed: 2026-10-08
+verification: measured
 area: [governance, ci, coverage]
 guard:
 normative: devguide/coverage_reporting.md
@@ -67,10 +67,15 @@ digest matches before XML is read; XML SHA-256 is
 `9fbbbd6dfcbae6233b00f40d8d5d2502d4102785b002d7e8d9bcfeba3062d426`.
 It covers exactly the three maintained scripts.
 
-Independent public inspection still has null report state/totals and a
-nonnumeric SVG; the single upload remains `started`, without a public error.
-The project is active/activated. No accepted percentage or processing cause is
-asserted, and no identical replay is prescribed. The principal maintainer has
-been asked for any authenticated Uploads/Build logs diagnostic. Keep this issue
-partial until service acceptance and live-badge delivery are verified.
-The primary clone and caller environment remain preserved.
+On 2026-10-08 at 09:39 UTC, independent public inspection confirms a complete
+report for that exact producer: 20.54%, three files and a numeric 21% SVG.
+Codecov counts 91 hits, 337 misses and 15 partials across 443 lines. The XML's
+106 covered lines include those partial lines; these measures are recorded
+separately. The earlier `started` observation is superseded by completed
+processing. The authenticated UI's “Missing Base Commit” concerns historical
+comparison, not a missing head report.
+
+The canonical live badge and scope/cadence explanation are now delivered. The
+three reporting tests and index checks pass. The primary clone and caller
+environment remain preserved. Central reconciliation belongs to
+`uibcdf/molsyssuite#69`; child runtime coverage is outside this closure.
