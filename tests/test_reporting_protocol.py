@@ -21,6 +21,7 @@ class TestReportingProtocol(unittest.TestCase):
             {report.fields["issue"] for report in reports},
             {
                 "uibcdf/molsys-ai#2",
+                "uibcdf/molsys-ai#3",
             },
         )
         result = subprocess.run(
