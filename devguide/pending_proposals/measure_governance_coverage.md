@@ -58,5 +58,19 @@ governance scripts. The hosted measurement uses the central producer's fixed
 coverage.py 7.16.0; its XML and service percentage will be checked independently.
 No uncovered resource-validator paths are removed from the denominator.
 
-Exact native upload and independent service acceptance remain to be recorded.
+Producer `b6c45e45f0bf53fe48dd706ab4acffce1f809bca` passes native reporting
+and independent publication in
+[37755754649](https://github.com/uibcdf/molsys-ai/actions/runs/37755754649).
+Both exact jobs and required steps are independently checked by source,
+workflow, push event and current attempt. The retained native artifact ZIP
+digest matches before XML is read; XML SHA-256 is
+`9fbbbd6dfcbae6233b00f40d8d5d2502d4102785b002d7e8d9bcfeba3062d426`.
+It covers exactly the three maintained scripts.
+
+Independent public inspection still has null report state/totals and a
+nonnumeric SVG; the single upload remains `started`, without a public error.
+The project is active/activated. No accepted percentage or processing cause is
+asserted, and no identical replay is prescribed. The principal maintainer has
+been asked for any authenticated Uploads/Build logs diagnostic. Keep this issue
+partial until service acceptance and live-badge delivery are verified.
 The primary clone and caller environment remain preserved.
