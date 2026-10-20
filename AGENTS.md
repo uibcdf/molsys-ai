@@ -17,6 +17,14 @@ Before filing or closing a durable subsystem report, follow
 `devguide/reporting_protocol.md` before committing. Do not edit synchronized
 guide copies in child repositories.
 
+## Public release titles
+
+When preparing, publishing or intentionally editing a public GitHub Release, use
+exactly `X.Y.Z` as its title/name, matching the canonical tag and package/project
+version. Put descriptions in the body/notes. Read
+[the local release-title guide](devguide/release_titles.md) and
+[the canonical rule](MOLSYSSUITE_GUIDE.md#github-release-titles).
+
 ## Modular reusable tools
 
 Before adding a feature, inspect existing tools and identify the owning module or
